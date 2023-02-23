@@ -1,0 +1,126 @@
+#Multiply {
+    background-color: #E5E5E5;
+}
+.multiply-heading {
+    grid-column: line5/line8;
+    grid-row: row2-0;
+    margin-top: 1em;
+}
+.multiply-heading1 {
+    background-color: var(--medium-accent);
+    border-radius: 20px;
+    grid-column: line4/line7;
+    grid-row: row2-1;
+    align-self: center;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    box-shadow: 1px 4px 7px grey;
+}
+.multiply-heading2 {
+    background-color: var(--medium-accent);
+    border-radius: 20px;
+    grid-column: line4/line7;
+    grid-row: row2-3;
+    align-self: center;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    box-shadow: 1px 4px 7px grey;
+}
+.multiply-list1 {
+    background-color: var(--medium-accent);
+    border-radius: 20px;
+    grid-column: line5/line8;
+    align-self: center;
+    grid-row: row2-2;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 1px 4px 7px grey;
+}
+.multiply-list2 {
+    background-color: var(--medium-accent);
+    border-radius: 20px;
+    grid-column: line5/line8;
+    grid-row: row2-4;
+    align-self: center;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 1px 4px 7px grey;
+}
+.Bild4 {
+    grid-column: line1/line4;
+    grid-row: row2-0/row2-4;
+}
+
+@media screen and (max-width: 1200px) {
+    .GridContainer--multiply {
+        display: grid;
+        grid-template-columns: [line3]auto [line4]auto;
+        grid-template-rows: [row2-0]auto [row2-1]auto [row2-2]auto [row2-3]auto [row2-4]auto;
+        height: 100%;
+        grid-gap: 1em;
+        padding-bottom: 4em;
+        padding-top: 1em;
+        position: relative;
+    }
+    .multiply-heading {
+        grid-column: line4;
+        grid-row: row2-0;
+        margin-top: 1em;
+        text-align: center;
+    }
+    .multiply-heading1 {
+        background-color: var(--medium-accent);
+        border-radius: 20px;
+        grid-column: line4;
+        grid-row: row2-1;
+        align-self: center;
+        padding: 1em;
+        margin: 1em;
+        text-align: center;
+        box-shadow: 1px 4px 7px grey;
+    }
+    .multiply-heading2 {
+        background-color: var(--medium-accent);
+        border-radius: 20px;
+        grid-column: line4;
+        grid-row: row2-3;
+        align-self: center;
+        padding: 1em;
+        margin: 1em;
+        text-align: center;
+        box-shadow: 1px 4px 7px grey;
+    }
+    .multiply-list1 {
+        background-color: var(--medium-accent);
+        border-radius: 20px;
+        grid-column: line4;
+        align-self: center;
+        grid-row: row2-2;
+        padding: 1em;
+        text-align: center;
+        box-shadow: 1px 4px 7px grey;
+    }
+    .multiply-list2 {
+        background-color: var(--medium-accent);
+        border-radius: 20px;
+        grid-column: line4;
+        grid-row: row2-4;
+        align-self: center;
+        padding: 1em;
+        text-align: center;
+        box-shadow: 1px 4px 7px grey;
+    }
+    .Bild4 {
+        height: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .GridContainer--multiply p {
+        font-size: 12px;
+    }
+}
+
+

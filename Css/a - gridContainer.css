@@ -1,0 +1,80 @@
+.GridContainer {
+    width: 73em;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-column-gap: 2em;
+}
+@media screen and (max-width: 1200px) {
+    .GridContainer {
+        width: 58em;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .GridContainer {
+        width: 98%;
+    }
+}
+
+.GridContainer--header {
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: repeat(6, 10fr);
+    grid-template-areas: "topbar topbar topbar topbar topbar topbar" "title title title title title title" ". . downicon downicon . .";
+}
+/*---------------------------------------------------------------experience------------------------------------------------------------------------*/
+
+.GridContainer--experience {
+    display: grid;
+    grid-template-rows: [row1]auto [row2]auto;
+    grid-template-columns: [line1]auto [line2]auto [line3]auto;
+    grid-gap: 2em;
+    justify-items: center;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+/*---------------------------------------------------------------REPOT------------------------------------------------------------------------*/
+.GridContainer--repot {
+    display: grid;
+    grid-template-columns: [line1]200px [line2]200px [line3]200px [line4]126px [line5]126px [line6]auto;
+    grid-template-rows: [row2-0]100px [row2-1]100px [row2-2]100px [row2-3]100px [row2-4]100px [row2-5]100px;
+    height: 100%;
+    grid-column-gap: 1em;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*-------------------------------------------------------------MULTIPLY--------------------------------------------------------*/
+.GridContainer--multiply {
+    display: grid;
+    grid-template-columns: [line1]1fr [line2]1fr [line3]1fr [line4]120px [line5]120px [line6]120px [line7]120px;
+    grid-template-rows: [row2-0]120px [row2-1]100px [row2-2]150px [row2-3]100px [row2-4]150px;
+    height: 100%;
+    grid-column-gap: 1em;
+    padding-bottom: 4em;
+    padding-top: 1em;
+    position: relative;
+}
+/*-------------------------------------------------------------contact--------------------------------------------------------*/
+.GridContainer--contact {
+    display: grid;
+    grid-template-columns: [line1]150px [line2]auto [line3]auto [line4]auto;
+    grid-template-rows: [row2-0]190px [row2-1]50px [row2-2]100px [row2-3]100px [row2-4]300px;
+    grid-gap: 0.4em;
+}
+/*-------------------------------------------------------------footer--------------------------------------------------------*/
+.GridContainer--footer {
+    display: grid;
+    grid-template-columns: [line1] 200px [line2]auto [line3]200px;
+    grid-template-rows: [row2-0]130px [row2-1]250px [row2-2]1fr [row2-3]50px [row2-4]60px;
+    grid-gap: 0.4em;
+    align-items: center;
+}
+
+
+

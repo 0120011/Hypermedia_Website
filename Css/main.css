@@ -1,0 +1,15 @@
+@import "c - images.css";
+@import "b - fonts.css";
+@import "d - colors.css";
+@import "a - gridContainer.css";
+@import "e - links.css";
+@import "1-header-layout.css";
+@import "2-experience-layout.css";
+@import "3-repot-layout.css";
+@import "4-multiply-layout.css";
+@import "5-contact-layout.css";
+@import "6-footer-layout.css";
+
+*{
+    margin: 0;
+}

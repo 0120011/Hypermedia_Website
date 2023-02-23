@@ -1,0 +1,15 @@
+a {
+    text-decoration: none;
+}
+a:link {
+    color: var(--text-color);
+}
+a:hover, a:visited:hover {
+    color: var(--light-accent);
+}
+a:visited {
+    color: dimgray;
+}
+a:active {
+    color: var(--light-accent);
+}

@@ -1,0 +1,143 @@
+#Repot{
+    background-color: #BFD1C3;
+}
+
+.repot-heading {
+    grid-column: line1;
+    grid-row: row2-0;
+}
+
+
+.Drainage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: line2/line4;
+    grid-row: row2-4;
+    background-color: var(--medium-accent);
+    padding: 1em;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 1px 4px 7px grey;
+}
+
+.Zeit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: line1/line3;
+    grid-row: row2-1;
+    background-color: var(--medium-accent);
+    padding: 1em;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 1px 4px 7px grey;
+}
+.Wasser {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: line1/line3;
+    grid-row: row2-5;
+    background-color: var(--medium-accent);
+    padding: 1em;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 1px 4px 7px grey;
+}
+.Erde {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-column: line1/line3;
+    justify-content: space-between;
+    grid-row: row2-3;
+    background-color: var(--medium-accent);
+    padding: 1em;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 1px 4px 7px grey;
+}
+.Gefäß {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-column: line2/line4;
+    justify-content: space-between;
+    grid-row: row2-2;
+    background-color: var(--medium-accent);
+    padding: 1em;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 1px 4px 7px grey;
+}
+.Bild3 {
+    grid-column: line5/line7;
+    grid-row: row2-0/row2-5;
+    justify-content: center;
+    margin-top: 2em;
+    box-shadow: 10px 10px 2px #6D9676;
+}
+
+@media screen and (max-width: 1200px) {
+    .GridContainer--repot {
+        display: grid;
+        grid-template-columns: [line2]auto [line3]auto [line4]auto;
+        grid-template-rows: [row2-0]auto [row2-1]100px [row2-2]150px [row2-3]100px [row2-4]150px;
+        height: 100%;
+        grid-column-gap: 1em;
+        padding-bottom: 4em;
+        padding-top: 2em;
+        position: relative;
+    }
+    .repot-heading {
+        grid-row: row2-0;
+        grid-column: line3/line5;
+        text-align: center;
+    }
+    .Zeit {
+        grid-row: row2-1;
+        grid-column: line3/line5;
+    }
+    .Erde {
+        grid-row: row2-2;
+        grid-column: line3/line5;
+    }
+    .Gefäß {
+        grid-row: row2-3;
+        grid-column: line3/line5;
+    }
+    .Drainage{
+        grid-row: row2-4;
+        grid-column: line3/line5;
+    }
+    .Wasser {
+        grid-row: row2-5;
+        grid-column: line3/line5;
+    }
+    .Bild3 {
+       height: 0;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .GridContainer--repot p {
+        font-size: 12px;
+    }
+}
+
+
+

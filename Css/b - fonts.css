@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,300;0,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+
+
+* {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 4px;
+}
+
+h1 {
+    color: var(--heading-color);
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: 10px;
+    text-shadow: 1px 4px 7px grey;
+}
+
+.TopBar-listItem{
+    font-size: 25px;
+    background-color: #9AB89F;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-variant: small-caps;
+    color: var(--heading-color);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.experience-listItem {
+    font-size: 30px;
+    color: var(--heading-color);
+}
+ h3 {
+     font-size: 3rem;
+     color: #094100;
+     opacity: 40%;
+     text-shadow: 1px 4px 7px grey;
+ }
+
+h4 {
+    font-size: 20px;
+    color: var(--heading-color)
+}
+
+@media screen and (max-width: 630px) {
+    h1 {
+        font-size: 8vw;
+    }
+}
+@media screen and (max-width: 420px) {
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 10px;
+    }
+}

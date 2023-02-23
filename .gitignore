@@ -1,0 +1,3 @@
+# Exclude the JetBrains PhpStorm project directory from version control
+
+.idea/

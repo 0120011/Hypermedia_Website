@@ -1,0 +1,137 @@
+
+.Header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/Kakteen.jpg");
+    background-size: cover;
+    margin:0;
+}
+
+.TopBar {
+    grid-area: topbar;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--medium-accent);
+}
+
+
+.TopBar-navigation {
+    font-size: 1.25rem;
+}
+
+.TopBar-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.TopBar-listItem {
+    margin-right: 2em;
+}
+@media screen and (max-width: 1200px) {
+    .TopBar-navigation ul li {
+        margin-right: 0.5em;
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .TopBar {
+        flex-direction: column;
+        text-align: center;
+        padding: 0.5em;
+        width: 96%;
+    }
+
+    .TopBar-navigation {
+        margin: 0.5em 0;
+    }
+
+    .TopBar-list {
+        flex-direction: column;
+    }
+
+    .TopBar-navigation ul li {
+        margin: 0;
+        padding-top: 0;
+    }
+    .Title-mainTitle {
+        opacity: 80%;
+        border-radius: 10px;
+        padding: 3px;
+        background-color: #BFD1C3;
+    }
+    .Title-tagLine {
+        opacity: 80%;
+        border-radius: 10px;
+        padding: 3px;
+        background-color: #BFD1C3;
+    }
+}
+
+.Title {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Title-mainTitle {
+    color: var(--heading-color);
+}
+
+.Title-tagLine {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--heading-color);
+    margin-top: 0;
+}
+
+@media screen and (max-width: 745px) {
+    .Title-mainTitle {
+        font-size: 8vw;
+    }
+
+    .Title-tagLine {
+        font-size: 4vw;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .Title-mainTitle {
+        text-align: center;
+    }
+    .TopBar-navigation ul li {
+        font-size: 15px;
+    }
+}
+@keyframes arrow-pulse {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.DownIcon {
+    grid-area: downicon;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.DownIcon-image {
+    width: 4em;
+    animation: arrow-pulse 2.5s ease-in-out infinite alternate;
+}
+

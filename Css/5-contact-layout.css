@@ -1,0 +1,222 @@
+
+#contact {
+    background-image: url("../images/Hintergrund 1.png");
+    width: 100%;
+}
+
+.Input-label {
+    text-align: left;
+    font-size: 25px;
+    color: var(--heading-color);
+    font-weight: bolder;
+}
+
+.Input-field {
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid var(--medium-accent);
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: #E5E5E5;
+}
+.contact-heading {
+    margin-top: 2em;
+    margin-bottom: 3em;
+    grid-column: 1/3;
+    grid-row: row2-0;
+}
+
+.Contact-formular {
+    grid-column: 1/5;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns: [line1]1fr [line2]1fr;
+    grid-template-rows: [row2-0]100px [row2-1]100px [row2-2]100px [row2-3]100px [row2-3-1]20px [row2-4]70px;
+    grid-gap: 0.2em;
+    grid-column-gap: 2em;
+}
+.Nachname {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/4;
+    grid-row: row2-0;
+}
+.Vorname {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+    grid-row: row2-0;
+}
+.E-mail {
+    display: flex;
+    flex-direction: column;
+
+    grid-column: 1/2;
+    grid-row: row2-1;
+}
+.Website {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/4;
+    grid-row: row2-1;
+}
+.Betreff {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: row2-2;
+}
+.Nachricht {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: row2-3/row2-4;
+}
+
+.ButtonS {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: 1px solid var(--medium-accent);
+    padding: 1rem;
+    transition: all 0.25s ease-in;
+    margin:0.5em;
+    grid-column: 1/2;
+    grid-row: row2-4;
+}
+
+.ButtonZ {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-family: inherit;
+    font-weight: bold;
+    margin:0.5em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: 1px solid var(--color-accent);
+    padding: 1rem;
+    transition: all 0.25s ease-in;
+    grid-column: 2/4;
+    grid-row: row2-4;
+}
+.ButtonZ:hover {
+    color: var(--light-accent);
+    background-color: darkslategray;
+}
+.ButtonS:hover {
+    color: var(--light-accent);
+    background-color: darkslategray;
+}
+@media screen and (max-width: 1200px) {
+    .Contact-formular {
+        margin: 1em;
+    }
+}
+@media screen and (max-width: 470px) {
+    .GridContainer--contact {
+        display: grid;
+        height: auto;
+        grid-template-columns:[line2]auto [line3]1fr [line4]auto;
+        grid-template-rows: [row2-0]130px [row2-1]50px [row2-2]100px [row2-3]100px [row2-4]300px;
+        grid-gap: 0.7em;
+    }
+    .contact-heading {
+        margin-top: 2em;
+        margin-bottom: 3em;
+        grid-column: 1/3;
+        grid-row: row2-0;
+    }
+    .contact-heading h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .contact-heading h4 {
+        font-size: 15px;
+        text-align: center;
+    }
+    .Input-label {
+        text-align: left;
+        font-size: 15px;
+        color: var(--heading-color);
+        font-weight: bolder;
+    }
+    .Contact-formular {
+        grid-column: line3;
+        grid-row: 2/7;
+        display: grid;
+        grid-template-columns: [line1]1fr;
+        grid-template-rows: [row2-0]auto [row2-1]auto [row2-2]auto [row2-3]auto [row2-3-1]auto [row2-4]auto [row2-5]auto [row2-6]auto [row2-7]auto;
+        grid-column-gap: 2em;
+        margin: 1em;
+    }
+    .Nachname {
+        display: flex;
+        flex-direction: column;
+        grid-column: line1;
+        grid-row: row2-0;
+    }
+    .Vorname {
+        display: flex;
+        flex-direction: column;
+        grid-column: line1;
+        grid-row: row2-1;
+    }
+    .E-mail {
+        display: flex;
+        flex-direction: column;
+        grid-column: line1;
+        grid-row: row2-2;
+    }
+    .Website {
+        display: flex;
+        flex-direction: column;
+        grid-column: line1;
+        grid-row: row2-3;
+    }
+    .Betreff {
+        display: flex;
+        flex-direction: column;
+        grid-column: line1;
+        grid-row: row2-3-1;
+    }
+    .Nachricht {
+        display: flex;
+        flex-direction: column;
+        grid-column: line1;
+        grid-row: row2-4/row2-5;
+    }
+
+    .ButtonS {
+        font-size: 1rem;
+        color: var(--text-color);
+        font-family: inherit;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 20px;
+        border: 1px solid var(--medium-accent);
+        padding: 1rem;
+        transition: all 0.25s ease-in;
+        grid-column: line1;
+        grid-row: row2-5;
+    }
+
+    .ButtonZ {
+        font-size: 1rem;
+        color: var(--text-color);
+        font-family: inherit;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 20px;
+        border: 1px solid var(--color-accent);
+        padding: 1rem;
+        transition: all 0.25s ease-in;
+        grid-column: line1;
+        grid-row: row2-6;
+    }
+
+
+}
+
